@@ -1,6 +1,8 @@
-Slides will be uploaded to https://speakerdeck.com/kastnerkyle
+PDF version of slides included.
+Slides also uploaded to https://speakerdeck.com/kastnerkyle
 
-PDF version of slides included
+Video of talk here:
+https://www.youtube.com/watch?v=TBBtOeY2Q78
 
 To run the code in the graphics directory, you will need Theano.
 I have not run this on CPU yet, but it runs pretty quickly on GPU.
