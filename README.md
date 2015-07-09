@@ -33,11 +33,11 @@ This variational autoencoder follows the general procedure described in
 Another paper describes a similar concept, [Stochastic Backpropagation and Approximate Inference in Deep Generative Models, Rezende, Mohamed, and Wierstra](http://arxiv.org/abs/1401.4082).
 
 VAE Code Walking
-================
+----------------
 ![walking_code](graphics_code/vae/vae_code.gif)
 
-Conditional VAE Reconstruction
-==============================
+VAE Reconstruction
+------------------
 ![reconstruct](graphics_code/vae/vae_reconstruction.png)
 
 
@@ -47,15 +47,15 @@ This conditional variational autoencoder follows a similar procedure to that des
 [Semi-supervised Learning with Deep Generative Models, Kingma, Rezende, Mohamed, and Welling](http://arxiv.org/abs/1406.5298).
 
 Conditional VAE Code Walking With Conditional Control
-=================================
+-----------------------------------------------------
 ![walking_code](graphics_code/cvae/cvae_code.gif)
 
 Holding Style (Z) Fixed and Changing Conditional y 
-==================================================
+--------------------------------------------------
 ![reconstruct](graphics_code/cvae/cvae_style.png)
 
 Conditional VAE Reconstruction and Prediction
-=============================================
+---------------------------------------------
 ![reconstruct](graphics_code/cvae/cvae_reconstruction.png)
 
 
