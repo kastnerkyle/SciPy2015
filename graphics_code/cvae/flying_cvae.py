@@ -90,7 +90,7 @@ for n, (X_i, y_i, sx_i, sy_i) in enumerate(zip(X_stack, y_stack,
         axarr[n, 1].text(0, 7, str(sy_a), color='red')
 
 f.suptitle("Validation accuracy: %s" % str(accuracy))
-plt.savefig('vae_reconstruction.png')
+plt.savefig('cvae_reconstruction.png')
 plt.close()
 
 # Style plotting
@@ -110,7 +110,7 @@ for n, (X_i, y_i) in enumerate(zip(sample_X, sample_y)):
         axarr[n, j].matshow(all_recs[j - 1].reshape(width, height), cmap="gray")
         axarr[n, j].axis('off')
 f.suptitle("Style variation by changing conditional")
-plt.savefig('vae_style.png')
+plt.savefig('cvae_style.png')
 plt.close()
 
 # Calculate noisy linear path between points in space
@@ -131,5 +131,5 @@ for i in range(n_plot_samples):
 out, = decode_function(path_X, path_y)
 text_y = [str(np.argmax(path_y[i])) for i in range(len(path_y))]
 color_y = ["white"] * len(text_y)
-make_gif(out, "vae_code.gif", width, height, list_text_per_frame=text_y,
+make_gif(out, "cvae_code.gif", width, height, list_text_per_frame=text_y,
          list_text_per_frame_color=color_y, delay=1, grayscale=True)
